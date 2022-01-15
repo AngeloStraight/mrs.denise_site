@@ -1,12 +1,18 @@
 var createError = require('http-errors');
 var express = require('express');
+const dotenv = require('dotenv')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const { engine } = require('express-handlebars')
 var indexRouter = require('./routes/index');
+const connectDB = require('./config/db');
 
 var app = express();
+
+dotenv.config({path: './config/config.env'})
+connectDB()
+
 
 // view engine setup
 app.engine('.hbs', engine({defaultLayout: 'layout', extname: '.hbs'}));
