@@ -1,8 +1,12 @@
-{{# each birds }}
-   <div class="row">
-       {{# each this }}
-            <div class="col">
-                <div class="card h-100">
+
+
+
+
+<div class="bir-container">
+
+    {{# each birds }}
+        {{# each this }}
+                <div class="card h-100 w-100">
                     <img src="{{ this.image }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -13,10 +17,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-       {{/each}}
-        
-    </div>
-{{/each}}
+        {{/each}}
+            
+    {{/each}}
 
-
+</div>

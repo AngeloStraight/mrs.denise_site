@@ -12,7 +12,7 @@ var birds = [
         sex:"male",
         age:1,
         price:150,
-        image: "/images/birdsoncage.PNG",
+        image: "/images/babybirds.jpg",
         createdAt: Date.now()
     }),
     new Bird({
@@ -20,7 +20,7 @@ var birds = [
         sex:"female",
         age:3,
         price:150,
-        image: "/images/birdonbooks.JPG",
+        image: "/images/birdincage.jpg",
         createdAt: Date.now()
     }),
     new Bird({
@@ -28,7 +28,7 @@ var birds = [
         sex:"male",
         age:10,
         price:150,
-        image: "/images/birdsonfridge.JPG",
+        image: "/images/birdonbox.JPG",
         createdAt: Date.now()
     }),
 ];

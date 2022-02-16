@@ -10,3 +10,20 @@
 .collapse{
   float: right;
 }
+
+.bird-container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* media query to change grid to flex in design products page */
+@media only screen and (max-width: 1000px) {
+  .my_container {
+      padding-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 50px;
+  }
+} 
